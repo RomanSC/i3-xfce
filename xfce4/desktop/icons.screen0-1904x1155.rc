@@ -1,0 +1,15 @@
+[xfdesktop-version-4.10.3+-rcfile_format]
+4.10.3+=true
+
+[Trash]
+row=10
+col=17
+
+[/]
+row=0
+col=0
+
+[/home/roman]
+row=1
+col=0
+

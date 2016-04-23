@@ -1,0 +1,28 @@
+[global_config]
+  always_on_top = True
+  borderless = True
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  hide_from_taskbar = True
+  sticky = True
+  suppress_multiple_term_dialog = True
+  title_receive_bg_color = "#003c5a"
+  title_transmit_bg_color = "#1793d1"
+[keybindings]
+  hide_window = <Super>Return
+[layouts]
+  [[default]]
+    [[[child0]]]
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1920, 1172
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#2d2d2d"
+    background_darkness = 0.9
+    background_image = None
+    background_type = transparent
+    foreground_color = "#ffffff"
+    visible_bell = True
