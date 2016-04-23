@@ -67,7 +67,7 @@
 				exec --no-startup-id compton
 
 			# auto-start redshift for reduced eye-strain and insomnia at night
-				exec --no-startup-id redshift-gtk -l 42.441:-84.3248
+				exec --no-startup-id redshift-gtk -l 
 
 			# auto-start caffeine-ng
 				exec --no-startup-id caffeine
