@@ -1,6 +1,6 @@
 # .config
 
-Here are my awesome config files that make it so you can run i3wm with XFCE4, with rofi and terminator as a drop-down terminal. Hotkeys are set for the most part to honor i3wm defaults. As some colors are set for rofi and windows in the i3 config, it's recommended to run Numixe Arch Blue as the GTK theme. I also recommend elementary-xfce-icons because they're the default for the awesome Xubuntu distribution known for it's amazing XFCE4 implementation.
+Here are my awesome config files that make it so you can run i3wm with XFCE4, with rofi and terminator as a drop-down terminal. Hotkeys are set for the most part to honor i3wm defaults. As some colors are set for rofi and windows in the i3 config, it's recommended to run Numix Arch Blue as the GTK theme. I also recommend elementary-xfce-icons because they're the default for the awesome Xubuntu distribution known for it's amazing XFCE4 implementation.
 
 Dependencies:
 
