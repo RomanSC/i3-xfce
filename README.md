@@ -16,10 +16,10 @@ Dependencies:
 * `eog`
 * `nautilus`
 * `gimp`
-* `colorgrab`<sup>AUR/sup>
+* `colorgrab`<sup>AUR</sup>
 * `ttf-ubuntu-font-family`
-* `numix-themes-archblue-git`<sup>AUR/sup>
-* `elementary-xfce-icons`<sup>AUR/sup>
+* `numix-themes-archblue-git`<sup>AUR</sup>
+* `elementary-xfce-icons`<sup>AUR</sup>
 
 Installation:
 
