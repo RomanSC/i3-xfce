@@ -28,10 +28,10 @@ First install your graphics drivers and get xorg running on your base installati
 
 Drivers:
 
-* `[For Nvidia](https://wiki.archlinux.org/index.php/NVIDIA)`
-* `[For Hybrid Intel/Nvidia Graphics with Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee)`
-* `[For AMD](https://wiki.archlinux.org/index.php/ATI)`
-* `[For Intel](https://wiki.archlinux.org/index.php/Intel_graphics)`
+* [`For Nvidia`](https://wiki.archlinux.org/index.php/NVIDIA)
+* [`For Hybrid Intel/Nvidia Graphics with Bumblebee`](https://wiki.archlinux.org/index.php/Bumblebee)
+* [`For AMD`](https://wiki.archlinux.org/index.php/ATI)
+* [`For Intel`](https://wiki.archlinux.org/index.php/Intel_graphics)
 
 For xorg, while installing your graphics drivers usually xorg-server and other necessary dependencies get pulled in, some are missing though, they are:
 
