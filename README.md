@@ -20,6 +20,7 @@ Dependencies:
 * `ttf-ubuntu-font-family`
 * `numix-themes-archblue-git`<sup>AUR</sup>
 * `elementary-xfce-icons`<sup>AUR</sup>
+* `scrot`
 
 Installation:
 
