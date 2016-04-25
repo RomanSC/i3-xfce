@@ -64,6 +64,10 @@ Edit .bash_profile with nano and add the line below to the bottom of the config:
  
 Now open xfce4-desktop-settings in xfce4 and navigate to the session tab, click clear saved sessions.
 
+Don't forget to remove xfdesktop, otherwise it'll load as a window in workspace 1 in i3. I haven't yet discovered a way to make the desktop work in i3wm, but if I do, I'll post about it...:
+
+* `sudo pacman -Rs xfdesktop`
+
 Copy these configs to your .config directory using, reboot, login and enjoy:
 
 * `reboot`
