@@ -21,6 +21,7 @@ Dependencies:
 * `numix-themes-archblue-git`<sup>AUR</sup>
 * `elementary-xfce-icons`<sup>AUR</sup>
 * `scrot`
+* `gnome-keyring`
 
 Installation:
 
