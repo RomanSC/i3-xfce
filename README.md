@@ -24,6 +24,48 @@ Dependencies:
 
 Installation:
 
-Just install i3, start it, and then log out. Install xfce4, start it, then log out. Uninstall xfdesktop with your package manager. Move the config files into your ~/.config directory, logout. Log back in and enjoy!
+First install your graphics drivers and get xorg running on your base installation.
+
+Drivers:
+
+* `[For Nvidia](https://wiki.archlinux.org/index.php/NVIDIA)`
+* `[For Hybrid Intel/Nvidia Graphics with Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee)`
+* `[For AMD](https://wiki.archlinux.org/index.php/ATI)`
+* `[For Intel](https://wiki.archlinux.org/index.php/Intel_graphics)`
+
+For xorg, while installing your graphics drivers usually xorg-server and other necessary dependencies get pulled in, some are missing though, they are:
+
+* `xterm` `xorg-xclock` <sup>optional but started by default xinit config file</sup>
+
+For audio install these packages and run "alsamixer" to unmute your main speaker:
+
+* `alsa-utils pulseaudio pavucontrol`
+
+Configure xinitrc to run xfce4, start it, and configure it with your desired panel setup. Refer to the [Arch wiki](https://wiki.archlinux.org/index.php/Xinitrc) for detailed instructions.:
+
+* `sudo cp /etc/X11/xinit/xinitrc ~/.xinitrc && sudo chown -R roman ~/.xinitrc`
+* `nano .xinitrc`
+
+Delete all lines in the file after the final "fi" and add on a new line "exec xfce4-session" and run startx:
+
+* `exec xfce4-session`
+* `startx`
+
+Configure xorg to auto-start at boot by following the instructions on the [Arch wiki](https://wiki.archlinux.org/index.php/Xinitrc#Autostart_X_at_login)
+
+Copy the default config file to your home directory:
+
+* `sudo cp -r /etc/skel/.bash_profile ~/.bash_profile && sudo chown -R roman ~/*`
+ 
+Edit .bash_profile with nano and add the line below to the bottom of the config:
+
+* `sudo nano .bash_profile`
+* `[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx`
+ 
+Now open xfce4-desktop-settings in xfce4 and navigate to the session tab, click clear saved sessions.
+
+Copy these configs to your .config directory using, reboot, login and enjoy:
+
+* `reboot`
 
 Please report issues with these instructions, report bugs, and contribute on [Github!](https://github.com/RomanSC/.config)
