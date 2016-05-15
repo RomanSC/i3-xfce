@@ -86,7 +86,7 @@ bindsym $mod+F1 exec firefox
 bindsym $mod+F9 exec spotify
 			
 #terminator
-bindsym $mod+Enter exec gnome-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # volume control keys
 bindsym $mod+F12 exec --no-startup-id pactl set-sink-volume 0 +5% # increase sound volume
@@ -187,7 +187,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exit
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really wish to exit i3?' -b 'Exit' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
