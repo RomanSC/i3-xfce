@@ -83,15 +83,17 @@ floating_modifier $mod
 
 # favorite application hotkeys
 bindsym $mod+F1 exec firefox
-bindsym $mod+F9 exec spotify
+#bindsym $mod+F9 exec spotify
 			
 #terminator
 bindsym $mod+Return exec gnome-terminal
 
-# volume control keys
-bindsym $mod+F12 exec --no-startup-id pactl set-sink-volume 0 +5% # increase sound volume
-bindsym $mod+F11 exec --no-startup-id pactl set-sink-volume 0 -5% # decrease sound volume
-				bindsym $mod+F10 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+#volume and music control keys
+#bindsym $mod+F12 exec --no-startup-id pactl set-sink-volume XF86AudioRaiseVolume +5% # increase sound volume
+#bindsym $mod+F11 exec --no-startup-id pactl set-sink-volume XF86AudioLowerVolume -5% # decrease sound volume
+#bindsym $mod+F10 exec --no-startup-id pactl set-sink-mute XF86AudioMute toggle
+#bindysm $mod+F9 exec --no-startup-id pactl
+#
 
 # calculator key
 bindsym $mod+F4 exec --no-startup-id gnome-calculator
@@ -109,20 +111,20 @@ bindsym $mod+d exec --no-startup-id rofi -show run -lines 18 -eh 2 -width 100 -p
 bindsym $mod+Shift+x exec i3lock --color "$bg-color"
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -131,7 +133,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+Shift+v split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -257,19 +259,32 @@ new_window none
 # disable mouse warping
 focus_follows_mouse no
 
-# window colors						border              background         text                 indicator
+#window colors		border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #00ff00
 client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
 
 # more colors
-set $bg-color 	         #2d2d2d
-set $inactive-bg-color   #2d2d2d
+set $bg-color 	         #2F343f
+set $inactive-bg-color   #444A58
 set $text-color          #f9f9f9
 set $inactive-text-color #dcdcdc
 set $urgent-bg-color     #E53935
 
-bar {
-
-}
+#bar
+  bar {
+    #font pango: System San Francisco Display, FontAwesome 11
+    #status_command i3blocks
+    position bottom
+    # strip_workspace_numbers yes
+    colors {
+      separator $base03
+      background $bg-color
+#                        border 		background		text
+      focused_workspace  $bg-color		$bg-color 		$text-color
+      active_workspace   $bg-color		$bg-color 		$text-color
+      inactive_workspace $inactive-bg-color	$inactive-bg-color 	$inactive-text-color
+      urgent_workspace   $urgent-bg-color	$urgent-bg-color 	$urgent-bg-color
+    }
+  }
