@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 #ls
-alias ls='ls -alh--color=always'
+alias ls='ls -alh --color=always'
 
 PS1='[\u@\h \W]\$ '
 
@@ -22,9 +22,12 @@ alias ping-google='ping 8.8.8.8; 8.8.4.4'
 alias ping-dns='ping -c'
 
 #cd commands
+
 alias ..='cd ..'
-alias cd ...='cd ../..'
-alias cd ....='cd ../../..'
+alias ...='cd .. && cd ..'
+alias ....='cd .. && cd .. && cd ..'
 
 #say
-alias say="espeak"
+alias say='espeak'
+
+alias ranger='ranger --cmd="toggle_option show_hidden"'
