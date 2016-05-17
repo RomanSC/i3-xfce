@@ -24,91 +24,68 @@
 # 8DDDDDDDDDD8D+=~=?I::~?II$NDDNNDNNNNNNNN
 # D8DDNDD8DDNDD~~~,,,,=??II$DDDNNNNNNNNNNN
 
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# i3 and other relevant configs hosted on Github
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# https://github.com/RomanSC/configs/blob/master/i3/config
-#
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# My Website
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# http://romanscollins.net
-#
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# Follow me on Github!
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# https://github.com/RomanSC
-#
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# Follow me on Social Media!
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# Twitter: https://twitter.com/RomanSCollins
-#	LinkedIn: https://www.linkedin.com/in/roman-collins-57697880
-#
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# How to use i3wm
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# See https://i3wm.org/docs/refcard.html for a reference on how to use the i3 desktop!
-#
-# See http://i3wm.org/docs/userguide.html for a complete reference on i3 the config file!
-#
-# Visit https://reddit.com/r/i3wm for the i3 Window Manager Community!
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+# feh
+exec --no-startup-id feh --bg-scale /home/roman/Pictures/gimp/gridular-colors.png
 
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# Applications opened at startup
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+# theming 
+# fonts 
+pango: Sans, Font Awesome 10
 
-# auto-start compton for opacity support
-exec --no-startup-id compton
+# icons 
+set   $workspace1               ""
+set   $workspace2               ""
+set   $workspace3               ""
+set   $workspace4               ""
+set   $workspace5               ""
+set   $workspace6               ""
+set   $workspace7               ""
+set   $workspace8               "
+set   $workspace9               ""
+set   $workspace10              ""
 
-# auto-start redshift for reduced eye-strain, you must add your own coordinates
-#exec --no-startup-id redshift-gtk -l 
+#     text colors
+set   $text-color                 #FFFFFF
+set   $inactive-text-color        #BBBBBB
+set   $urgent-text-color          #E31030
 
-# auto-start caffeine-ng
-exec --no-startup-id caffeine
+#     background colors
+set   $bg-color                   #2F343F
+set   $inactive-bg-color          #383C4A
+set   $urgent-bg-color            #20242b
 
-# terminator
-#exec --no-start-up-id terminator
+#     indicators
+set   $indicator-color            #FFFFFF
+#set   $inactive-indicator-color
+set   $urgent-indicator-color     #E31030
 
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# Hotkeys
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+# autostart
+  exec --no-start-up-id nm-applet
+  exec --no-startup-id compton
+# exec --no-startup-id redshift-gtk -l
+  exec --no-startup-id caffeine
+  exec --no-start-up-id terminator
 
-# Mod key = Super key (Windows key)
-set $mod Mod4
+# hotkeys
+set $mod mod4
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
-
-# favorite application hotkeys
+bindsym $mod+Return exec terminator
 bindsym $mod+F1 exec firefox
-#bindsym $mod+F9 exec spotify
-			
-#terminator
-bindsym $mod+Return exec gnome-terminal
-
-#volume and music control keys
-#bindsym $mod+F12 exec --no-startup-id pactl set-sink-volume XF86AudioRaiseVolume +5% # increase sound volume
-#bindsym $mod+F11 exec --no-startup-id pactl set-sink-volume XF86AudioLowerVolume -5% # decrease sound volume
-#bindsym $mod+F10 exec --no-startup-id pactl set-sink-mute XF86AudioMute toggle
-#bindysm $mod+F9 exec --no-startup-id pactl
-#
-
-# calculator key
+bindsym $mod+F9 exec spotify
 bindsym $mod+F4 exec --no-startup-id gnome-calculator
-
-# screenshot
 bindsym $mod+Print exec scrot -e 'mv $f ~/Pictures/Screenshots'
-
-# kill focused window
 bindsym $mod+Shift+q kill
 
-# rofi
-bindsym $mod+d exec --no-startup-id rofi -show run -lines 18 -eh 2 -width 100 -padding 400 -opacity "90" -bw 0 -bc "#282828" -bg "#282828" -fg "#1793D1" -hlgb "#1793D1" -hlfg "#252525"
-
-# i3lock hotkey
-bindsym $mod+Shift+x exec i3lock --color "$bg-color"
+# volume control keys
+bindsym $mod+F12 exec --no-startup-id pactl set-sink-volume 0 +5% # increase sound volume
+bindsym $mod+F11 exec --no-startup-id pactl set-sink-volume 0 -5% # decrease sound volume
+bindsym $mod+F10 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioLowerVolume exec --no-startup-id pulsedaudio-ctl down
+bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up
+bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # change focus
 bindsym $mod+h focus left
@@ -125,18 +102,32 @@ bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-
-# alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# split in horizontal orientation
+# split in horizontal and vertical orientation
 bindsym $mod+Shift+v split h
-
-# split in vertical orientation
 bindsym $mod+v split v
+
+# move floating windows
+floating_modifier $mod
+
+bindsym $mod+r mode "  "
+mode "" {
+ bindsym h resize shrink width 10 px or 10 ppt
+ bindsym j resize grow width 10 px or 10 ppt
+ bindsym k resize grow height 10 px or 10 ppt
+ bindsym l resize shrink height 10 px or 10 ppt
+ bindsym Left resize shrink width 10 px or 10 ppt
+ bindsym Down resize grow height 10 px or 10 ppt
+ bindsym Up resize shrink height 10 px or 10 ppt
+ bindsym Right resize grow width 10 px or 10 ppt
+
+ bindsym Escape mode "default"
+ bindsym Return mode "default"  
+}
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -159,132 +150,99 @@ bindsym $mod+a focus parent
 # bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace $workspace9
+bindsym $mod+0 workspace $workspace10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+bindsym $mod+Shift+0 move container to workspace $workspace10
 
-# reload the configuration file
+# reload and restart i3
 bindsym $mod+Shift+c reload
-
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
+for_window [class="Eog"] floating enable
+for_window [class="eog"] floating enable
+for_window [class="Nautilus"] floating enable
+for_window [class="nautilus"] floating enable
+for_window [class="Gimp"] floating enable
+for_window [class="gimp"] floating enable
+for_window [class="Xpad"] floating enable
+for_window [class="xpad"] floating enable
+for_window [class="Colorgrab"] floating enable
+for_window [class="colorgrab"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [class="lxappearance"] floating enable
+
+# program Workspaces
+assign [class="Terminator"]			$workspace1
+assign [class="Firefox"]			$workspace2
+assign [class="Pidgin"]				$workspace3
+assign [class="Ghetto-skype"]			$workspace4
+assign [class="Libreoffice"]			$workspace5
+assign [class="Eog"]				$workspace6
+assign [class="Vlc"]				$workspace6
+assign [class="Steam"]				$workspace7
+assign [class="Virtualbox"]			$workspace8
+assign [class="Spotify"]			$workspace9
+assign [class="Pavucontrol"]			$workspace9
+assign [class="Pulseaudio-equalizer-gtk"]	$workspace9
+
+#     options
+      new_window		none
+      hide_edge_borders		both
+      focus_follows_mouse	no
+
+#
+
+#     object 	  		  border 		background		text			indicator
+      client.focused		  $bg-color		$bg-color		$text-color		$indicator-color
+      client.unfocused		  $inactive-bg-color	$inactive-bg-color	$inactive-color		$inactive-bg-color
+      client.focused_inactive	  $inactive-bg-color	$inactive-bg-color	$inactive-color		$inactive-bg-color
+      client.urgent		  $urgent-bg-color	$urgent-bg-color	$urgent-text-color	$urgent-indicator-color
+  
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really wish to exit i3?' -b 'Exit' 'i3-msg exit'"
 
-# resize window (you can also use the mouse for that)
-mode "resize" {
-# These bindings trigger as soon as you enter the resize mode
+# rofi
+bindsym $mod+semicolon exec --no-startup-id rofi -show run -lines 18 -eh 2 -width 100 -padding 400 -opacity 90
 
-# Pressing left will shrink the window’s width.
-# Pressing right will grow the window’s width.
-# Pressing up will shrink the window’s height.
-# Pressing down will grow the window’s height.
-bindsym j resize shrink width 10 px or 10 ppt
-bindsym k resize grow height 10 px or 10 ppt
-bindsym l resize shrink height 10 px or 10 ppt
-bindsym semicolon resize grow width 10 px or 10 ppt
+# i3lock
+bindsym $mod+Shift+x exec i3lock --color "$bg-color"
 
-# same bindings, but for the arrow keys
-bindsym Left resize shrink width 10 px or 10 ppt
-bindsym Down resize grow height 10 px or 10 ppt
-bindsym Up resize shrink height 10 px or 10 ppt
-bindsym Right resize grow width 10 px or 10 ppt
+# nagbar
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really wish to exit i3?' -b 'Exit' 'i3-msg exit'"
 
-# back to normal: Enter or Escape
-bindsym Return mode "default"
-bindsym Escape mode "default"
-}
-bindsym $mod+r mode "resize"
-
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# windows in floating mode
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-
-# Eye of Gnome photo viewer
-for_window [class="Eog"] floating enable
-for_window [class="eog"] floating enable
-
-# Nautilus file manager
-for_window [class="Nautilus"] floating enable
-for_window [class="nautilus"] floating enable
-
-# GNU Image Manipulation Program
-for_window [class="Gimp"] floating enable
-for_window [class="gimp"] floating enable
-
-# xpad note taker
-for_window [class="Xpad"] floating enable
-for_window [class="xpad"] floating enable
-
-# Colorgrab hexidecimal color selector
-for_window [class="Colorgrab"] floating enable
-for_window [class="colorgrab"] floating enable
-
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-# UI Function and Styling
-#-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-
-# Font for window titles and bar
-font pango: Ubuntu Light 12
-
-# Set the background
-exec --no-startup-id feh --bg-scale /home/roman/Pictures/Wallpapers/nature_mountain_forest_landscape_fog_ultrahd_4k_wallpaper_1920x1080.jpg
-
-# hide edge borders
-hide_edge_borders both
-
-# disable window title bars
-new_window none
-
-# disable mouse warping
-focus_follows_mouse no
-
-#window colors		border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
-
-# more colors
-set $bg-color 	         #2F343f
-set $inactive-bg-color   #444A58
-set $text-color          #f9f9f9
-set $inactive-text-color #dcdcdc
-set $urgent-bg-color     #E53935
-
-#bar
-  bar {
-    #font pango: System San Francisco Display, FontAwesome 11
-    #status_command i3blocks
+# bar
+bar {
+    font pango: Sans, FontAwesome 10
+    status_command py3status -c ~/.config/i3/py3status-config
     position bottom
-    # strip_workspace_numbers yes
-    colors {
-      separator $base03
-      background $bg-color
-#                        border 		background		text
-      focused_workspace  $bg-color		$bg-color 		$text-color
-      active_workspace   $bg-color		$bg-color 		$text-color
-      inactive_workspace $inactive-bg-color	$inactive-bg-color 	$inactive-text-color
-      urgent_workspace   $urgent-bg-color	$urgent-bg-color 	$urgent-bg-color
-    }
-  }
+    strip_workspace_numbers yes
+      
+colors {
+#     [object]	  		  [border]		[background]		[text]	
+      focused_workspace  	  $bg-color 		$bg-color    		$text-color
+      active_workspace   	  $bg-color 		$bg-color    		$text-color
+      inactive_workspace 	  $inactive-bg-color 	$inactive-bg-color    	$inactive-color
+      urgent_workspace   	  $urgent-bg-color 	$urgent-bg-color    	$urgent-text-color
+      background		  $bg-color
+       }
+}
+
