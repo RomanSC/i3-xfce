@@ -5,7 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+#ls
+alias ls='ls -alh--color=always'
+
 PS1='[\u@\h \W]\$ '
 
 #pastebin
@@ -21,8 +23,8 @@ alias ping-dns='ping -c'
 
 #cd commands
 alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
+alias cd ...='cd ../..'
+alias cd ....='cd ../../..'
 
 #say
 alias say="espeak"
