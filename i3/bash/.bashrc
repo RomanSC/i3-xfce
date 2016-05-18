@@ -26,3 +26,6 @@ alias ....='cd ../../..'
 
 #say
 alias say="espeak"
+
+#devprep
+alias devprep='echo "__________________________________________" && lsblk && echo "__________________________________________" && echo "." && pwd && echo "__________________________________________" && echo "~/Downloads" && ls ~/Downloads && echo "__________________________________________" && echo "~/Downloads/torrents" && ls ~/Downloads/torrents && echo "__________________________________________"'
