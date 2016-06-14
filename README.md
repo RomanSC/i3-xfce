@@ -1,4 +1,4 @@
-# .config
+# i3-xfce
 
 Here are my awesome config files that allow you to run i3wm with XFCE4, with rofi for the program launcher and terminator as a drop-down terminal. Hotkeys are set for the most part to honor i3wm defaults. As some colors are set for rofi and windowsin  the i3 config, it's recommended to run Numix Arch Blue as the GTK theme. I also recommend elementary-xfce-icons because they're the default for the awesome Xubuntu distribution known for it's amazing XFCE4 implementation.
 
