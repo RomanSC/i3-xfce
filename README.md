@@ -1,6 +1,6 @@
 # i3-xfce
 
-Here are my awesome config files that allow you to run i3wm with XFCE4, with rofi for the program launcher and terminator as a drop-down terminal. Hotkeys are set for the most part to honor i3wm defaults. As some colors are set for rofi and windowsin  the i3 config, it's recommended to run Numix Arch Blue as the GTK theme. I also recommend elementary-xfce-icons because they're the default for the awesome Xubuntu distribution known for it's amazing XFCE4 implementation.
+Here are my awesome config files that allow you to run i3wm with XFCE4, with rofi for the program launcher and terminator as a drop-down terminal. (I also recommend running whisker menu if you want a more traditional XFCE setup.)Hotkeys are set for the most part to honor i3wm defaults. As some colors are set for rofi and windowsin  the i3 config, it's recommended to run Numix Arch Blue as the GTK theme. I also recommend elementary-xfce-icons because they're the default for the awesome Xubuntu distribution known for it's amazing XFCE4 implementation.
 
 Dependencies:
 
@@ -50,13 +50,16 @@ Configure xinitrc to run xfce4, start it, and configure it with your desired pan
 Delete all lines in the file after the final "fi" and add on a new line "exec xfce4-session" and run startx:
 
 * `exec xfce4-session`
+
+Run xorg-server with your newly specified session:
+
 * `startx`
 
 Configure xorg to auto-start at boot by following the instructions on the [Arch wiki](https://wiki.archlinux.org/index.php/Xinitrc#Autostart_X_at_login)
 
-Copy the default config file to your home directory:
+Copy the default config file to your home directory, whereas <user> is your user own account:
 
-* `sudo cp -r /etc/skel/.bash_profile ~/.bash_profile && sudo chown -R roman ~/*`
+* `sudo cp -r /etc/skel/.bash_profile ~/.bash_profile && sudo chown -R <user> ~/*`
  
 Edit .bash_profile with nano and add the line below to the bottom of the config:
 
